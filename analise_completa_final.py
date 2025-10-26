@@ -13,8 +13,8 @@ def load_and_prepare_data():
     # 1. Carregar os dados
     try:
         # ATENÇÃO: Ajuste os caminhos abaixo se os arquivos CSV não estiverem neste local
-        df_boletos = pd.read_csv('/home/ubuntu/upload/base_boletos_fiap(in).csv', sep=',')
-        df_auxiliar = pd.read_csv('/home/ubuntu/upload/base_auxiliar_fiap(in).csv', sep=',')
+        df_boletos = pd.read_csv('base_boletos_fiap(in).csv', sep=',')
+        df_auxiliar = pd.read_csv('base_auxiliar_fiap(in).csv', sep=',')
     except Exception as e:
         print(f"Erro ao carregar os arquivos. Verifique se os caminhos estão corretos: {e}")
         return None
