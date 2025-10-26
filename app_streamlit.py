@@ -18,8 +18,8 @@ st.set_page_config(
 @st.cache_data
 def load_and_prepare_data():
     try:
-        df_boletos = pd.read_csv('/home/ubuntu/upload/base_boletos_fiap(in).csv', sep=',')
-        df_auxiliar = pd.read_csv('/home/ubuntu/upload/base_auxiliar_fiap(in).csv', sep=',')
+        df_boletos = pd.read_csv('base_boletos_fiap(in).csv', sep=',')
+        df_auxiliar = pd.read_csv('base_auxiliar_fiap(in).csv', sep=',')
     except Exception as e:
         st.error(f"Erro ao carregar os arquivos: {e}")
         return None
